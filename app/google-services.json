@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "639290660300",
+    "project_id": "espacounifor",
+    "storage_bucket": "espacounifor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639290660300:android:f37a0816b7811b521f7969",
+        "android_client_info": {
+          "package_name": "com.example.espacounifor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMtM8o-7s3gtp_jUeccLf7D27BxkrsAfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

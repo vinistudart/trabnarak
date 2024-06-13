@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#E0E0E0">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OUÇA SOBRE A OBRA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_speak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ouvir Obra"
+        android:layout_marginBottom="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Espaço Cultural Unifor Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icon_unifor" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ESPAÇO CULTURAL UNIFOR"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Back Button -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="←"
+                android:onClick="onBackPressed" />
+
+            <!-- Date and Time -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sex, 23 de fevereiro de 2024 17:58"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginTop="8dp" />
+
+            <!-- Título da Exposição -->
+            <TextView
+                android:id="@+id/tv_exhibition_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exposição Centelhas em Movimento - Coleção Igor Queiroz Barroso desembarca no Espaço Cultural Unifor"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <!-- Texto Introdutório -->
+            <TextView
+                android:id="@+id/tv_intro_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A mostra convida o público a um passeio pela arte brasileira com peças do período barroco, passando pela arte moderna e chegando até os dias atuais."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- Imagem Principal -->
+            <ImageView
+                android:id="@+id/iv_exhibition_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="8dp" />
+
+            <!-- Texto Detalhado -->
+            <TextView
+                android:id="@+id/tv_detailed_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="“Por acreditarmos que obras de arte podem estar em brasa quando reavivadas pelos olhares dos públicos, concebemos a fricção entre elas como ação que desprende centelhas pelos ares”. É com essa percepção que Paulo Miyada e Tiago Gualberto montaram a exposição “Centelhas em Movimento”, com obras da Coleção Igor Queiroz Barroso. Após bem-sucedida temporada no Instituto Tomie Ohtake, em São Paulo, a mostra chega à Fortaleza, terra natal do colecionador. A abertura da exposição acontecerá no dia 12 de março, às 19h, no Espaço Cultural Unifor."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:id="@+id/tv_more_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A partir de 13 de março, a exposição será aberta ao público, com visitação gratuita, de terças a sextas, das 9h às 19h e, aos sábados e domingos, das 12h às 18h. Na manhã do dia 13, às 9h30, os curadores vão ministrar palestra sobre a mostra no Núcleo Diálogos, também situado no Espaço Cultural Unifor."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:id="@+id/tv_extra_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A mostra, patrocinada pelo Bradesco, por meio da Lei de Incentivo à Cultura – Lei Rouanet, conta com cerca de 190 obras de autoria de mais de 55 artistas, abrangendo o período dos anos 1910 aos dias atuais, com foco especial na arte moderna brasileira. Assim, com a expografia e a montagem, os curadores buscam intensificar atritos e ressonâncias ao colocar lado a lado obras de distintos artistas, de momentos e contextos diferentes."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- Imagem Secundária -->
+            <ImageView
+                android:id="@+id/iv_exhibition_image_2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/obraabstracaoantoniobandeira"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="16dp" />
+
+            <!-- Texto Complementar -->
+            <TextView
+                android:id="@+id/tv_complementary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="“Os curadores conceberam uma montagem que destaca não apenas as singularidades de cada obra, mas também os diálogos e contrapontos entre elas. Por meio de narrativa visual que desafia a linearidade histórica, a exposição proporciona enigmas que instigam reflexões sobre o caráter ambivalente do modernismo, que desencadeia uma tensão produtiva, calor que pode gerar centelhas, convocando os visitantes a mergulharem em um universo de múltiplos significados”, afirma Lenise Queiroz Rocha, presidente da Fundação Edson Queiroz, mantenedora da Universidade de Fortaleza."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:id="@+id/tv_additional_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ao abrir mão do aspecto cronológico ou da segmentação por autoria na montagem da exposição, Tiago Gualberto destaca que os visitantes presentes no espaço expositivo são convidados a participar criativamente no tecimento de associações poéticas ao se depararem com espelhamentos entre obras em diferentes salas, por exemplo, ou por meio da articulação de conjuntos híbridos no espaço durante os percursos. “Isso certamente tornará a visita à exposição uma oportunidade de deflagrar nuances ou agitadas centelhas resultantes desses oportunos encontros”, acrescenta."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:id="@+id/tv_curator_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Para Paulo Miyada, além de propor diálogos e enigmas, a narrativa não-linear da mostra evidencia que é o movimento que possibilita novas perspectivas e compreensões. O curador explica que o que está em jogo na exposição e em seu título é justamente a retomada do entendimento mais prosaico e intuitivo do movimento: deslocamento, em quaisquer direções e sentidos."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:id="@+id/tv_movement_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="“Quem já observou o ofício de um serralheiro sabe que as centelhas liberadas pelo trabalho em metal são fascinantes não apenas por seu brilho intenso e fugaz, mas também pelo imprevisível de suas trajetórias. Este é um dos objetivos prioritários desse projeto: encontrar o modernismo brasileiro, suas consequências e desvios em estado de ebulição, com sua cronologia embaralhada, suas hierarquias em suspensão e com a constante possibilidade de flagrar retrocessos nos avanços e saltos adiante nos retornos. Nem todo movimento, afinal, implica desenvolvimento. Ainda bem”, reforça."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- Imagem Terciária -->
+            <ImageView
+                android:id="@+id/iv_exhibition_image_3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/cabecademulato"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="16dp" />
+
+            <!-- Texto sobre Recurso Interativo -->
+            <TextView
+                android:id="@+id/tv_interactive_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Na exposição haverá ainda recurso interativo tecnológico desenvolvido em parceria com o Laboratório Vortex, da Diretoria de Tecnologia (DTec) da Unifor. O personagem da obra 'Cabeça de Mulato', de Candido Portinari, será modelado em 3D, animado e falará com o visitante da exposição por meio de monitor de TV localizado dentro do espaço expositivo, dando informações sobre o artista e a obra. A obra faz parte da Coleção Igor Queiroz Barroso, mas está emprestada para a Bienal de Veneza, na Itália. A iniciativa da inclusão do recurso tecnológico permitirá que os visitantes possam contemplar, ainda que virtualmente, essa icônica obra do artista brasileiro."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:id="@+id/tv_technology_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Não é a primeira vez que recursos tecnológicos e interativos são utilizados nas exposições do Espaço Cultural Unifor. Em 2023, ano em que a Universidade de Fortaleza celebrou meio século de existência, foram realizadas duas mostras inovadoras, em que os visitantes puderam apreciar as obras através de óculos de realidade virtual, também desenvolvidos pelo Laboratório Vortex."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:id="@+id/tv_previous_exhibits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="De junho a agosto, ficou em exibição no Núcleo Diálogo, do Espaço Cultural Unifor, a exposição 'Naza na Natureza', da artista plástica piauiense radicada nos Estados Unidos, Naza Mcfarren. De setembro a dezembro, o espaço abrigou a mostra 'Leonilson: Territórios em Travessia – Recorte Virtual', a primeira individual do artista realizada em ambiente virtual."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- Serviço -->
+            <TextView
+                android:id="@+id/tv_service_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Serviço"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+            <TextView
+                android:id="@+id/tv_exhibit_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exposição Centelhas em Movimento"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:id="@+id/tv_curators"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Curadores: Paulo Miyada e Tiago Gualberto"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Local: Espaço Cultural Unifor (Av. Washington Soares, 1321, Edson Queiroz, Fortaleza-CE)"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:id="@+id/tv_opening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abertura: 12 de março de 2024, 19h"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:id="@+id/tv_lecture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Palestra com curadores: 13 de março, 9h30, Espaço Cultural Unifor – Núcleo Diálogos"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:id="@+id/tv_exhibition_dates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exibição: a partir de 13 de março de 2024"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:id="@+id/tv_visitation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visitação gratuita: terças a sextas, 9h às 19h; sábados e domingos, 12h às 18h"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
