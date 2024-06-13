@@ -11,4 +11,4 @@ Fabio Pessoa - 2316703
 Tiago Araujo - 2110918
 Guilherme Albuquerque - 2210394
 Documento de Requisitos
-Para mais detalhes sobre os requisitos do projeto, consulte o Documento de Requisitos - https://github.com/vinistudart/trabnarak/blob/master/Template%20Trabalho%20Disp.%20Moveis%20Final.docx
+Para mais detalhes sobre os requisitos do projeto, consulte o Documento de Requisitos.
